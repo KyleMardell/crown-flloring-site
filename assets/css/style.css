@@ -1,3 +1,26 @@
-body {
-    background-color: blue;
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+nav {
+    background-color: #d1d1d1d1;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 3px 6px;
+    height: 80px;
+}
+
+main {
+    margin-top: 80px;
 }
