@@ -20,32 +20,32 @@
     <header>
         <!-- Nav -->
         <nav class="navbar fixed-top navbar-expand-lg">
-            <div class="container-fluid d-flex align-items-center px-2">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="assets/img/logo-rect-nobg.webp" alt="crown carpets and flooring logo" height="55"
-                        class="d-inline-block">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-lg-0 mx-auto" href="#">
+                    <img src="assets/img/logo-rect-nobg.webp" alt="crown carpets and flooring logo" height="60">
                 </a>
-                <div class="mx-auto fw-bold">
-                    Details
-                    0113 345 2359
-                </div>
-                <button class="navbar-toggler p-1 ms-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav text-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
                                 Home
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -53,18 +53,241 @@
         </nav>
     </header>
     <main>
-        <section class="container hero-section">
-            <div class="row">
-                <div class="col">
-                    <h1>Crown Carpets & Flooring</h1>
-                    <h2>High Quality Commercial and Domestic Flooring</h2>
+        <!-- Hero -->
+        <section class="container hero-container position-relative p-0">
+            <div class="row justify-content-md-center">
+                <div class="col col-md-10 col-lg-8 p-0">
+                    <div class="hero-section">
+                        <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/carpet-bedroom-1.webp" class="d-block w-100" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/carpet-hall-1.webp" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/carpet-hall-2.webp" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-overlay"></div>
+
+            <div class="hero-caption">
+                <h1>Crown Carpets & Flooring</h1>
+                <h2>High Quality Commercial and Domestic Flooring</h2>
+            </div>
+
+        </section>
+
+        <!-- C.T.A -->
+        <section class="container-fluid cta-section p-0">
+            <div class="row w-100 h-100 m-0">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="cta-link">
+                        <a href="#">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conainer-fluid details-section p-0">
+            <div class="row justify-content-md-center mb-5">
+                <div class="col col-md-10 col-lg-8 col-xl-6">
+                    <div class="accordion" id="details-accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Crown Carpets & Flooring
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#details-accordion">
+                                <div class="accordion-body">
+                                    <div class="details-into">
+                                        Crown Carpets and Flooring has been providing high quality flooring solutions
+                                        since 2019.
+                                        Our dedication to quality and customer satisfaction is what sets us apart in
+                                        West Yorkshire.
+                                        Whether you're looking to refresh a single room or undertake a large-scale
+                                        commercial project,
+                                        we have the expertise to deliver exceptional results.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Services
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#details-accordion">
+                                <div class="accordion-body">
+                                    Our team specializes in a comprehensive range of flooring services, including
+                                    fitting and removal for both commercial and domestic applications. We handle all
+                                    types of flooring:
+                                    <ul>
+                                        <li>Carpet</li>
+                                        <li>Hardwood</li>
+                                        <li>Laminate</li>
+                                        <li>Vinyl</li>
+                                        <li>Tile</li>
+                                        <li>Artificial Grass</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Location
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#details-accordion">
+                                <div class="accordion-body">
+                                    Crown Carpets and Flooring proudly serves the entire West Yorkshire region, with a
+                                    primary base in Leeds. We are committed to providing timely and efficient services
+                                    to all our clients within this area.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Customer Satisfaction
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#details-accordion">
+                                <div class="accordion-body">
+                                    Customer satisfaction is at the heart of what we do. With over 100 positive reviews
+                                    on Facebook and numerous testimonials, we have built a reputation for reliability,
+                                    quality, and excellent customer service. Our clients appreciate our personable
+                                    approach and our commitment to communication throughout each project.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Why Choose Us ?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#details-accordion">
+                                <div class="accordion-body">
+                                    As a small company with big ideas, we offer a unique, personal level of service that
+                                    larger companies often can't match. We work closely with multiple suppliers to
+                                    secure the best prices for our customers and can also collaborate with your
+                                    preferred suppliers. This flexibility allows us to tailor our services to meet your
+                                    specific needs and budget.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="container-fluid review-section p-3 mb-5 mt-5">
+            <div class="row justify-content-md-center mb-5 mt-5">
+                <div class="col col-md-10 col-lg-8 col-xl-6">
+
+                    <div id="card-carousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img src="assets/img/review1.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Highly recommended, did an amazing job, done quickly no
+                                            messing around! Friendly guys. Thank you again! (Alycia - Facebook)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="assets/img/review2.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Thank you to luke and his polite colleagues at Crown
+                                            Carpets and Flooring for supplying and fitting my carpet and LVT flooring.
+                                            Great service at a great standard of installation. Would highly recommend!
+                                            (Anita - Facebook)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="assets/img/review3.webp" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Amazing service from start to finish! With a new move and a
+                                            baby on the way the team have been nothing but supportive and professional!
+                                            Two Bedrooms, Landing & Stairs all completed with a beautiful luxury carpet
+                                            at an affordable price 🙏🏼 A small mix up with the suppliers colour match
+                                            but this was not an issue, Luke and his team (Harry & Brandon) got the job
+                                            done quickly & effciently despite this 👏🏼
+                                            We defintley recommend and we will see them back here to do our kitchen
+                                            floors!
+                                            11/10 ⭐️ (Kerri-Lee - Facebook)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#card-carousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#card-carousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+
+
+
                 </div>
             </div>
 
         </section>
+
+        <!-- Map -->
+        <section class="container-fluid map-section p-0">
+            <div class="row justify-content-md-center">
+                <div class="col col-md-8 col-lg-8 col-xl-6 text-center">
+                    <h3>We provide services across West Yorkshire</h3>
+                    <p>Get in contact to see if we cover your area</p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-md-8 col-lg-8 col-xl-6 d-flex justify-content-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151020.3951934345!2d-1.8508288280288665!3d53.741530327433026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48791339c06b18f1%3A0x6517b5a23c63c194!2sWest%20Yorkshire!5e0!3m2!1sen!2suk!4v1722033164875!5m2!1sen!2suk"
+                        allowfullscreen="" loading="lazy" class="google-map mb-5 w-100"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
-        <div class="container fixed-bottom">
+        <div class="container footer-details">
             <h4>Crown Carpets & Flooring <span class="est-text">est 2019</span></h4>
             <p>Phone: 0113 345 2359</p>
             <p>Email: sales@crowncarpetsandflooring.com</p>
