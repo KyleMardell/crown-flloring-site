@@ -1,3 +1,6 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Reset default browser styles */
 * {
     margin: 0;
@@ -15,14 +18,31 @@ html {
     box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+    font-family: "Rowdies", sans-serif;
+}
+
+p {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 500;
+}
+
 /* Nav */
 
 nav {
-    background-color: #dfdfdf;
+    background-color: #f4ebd0;
     box-shadow: rgba(0, 0, 0, 0.3) 0 3px 6px;
+    font-weight: 500;
 }
 
-@media (min-width: 760px) { 
+@media (min-width: 760px) {
     .navbar-toggler {
         margin-right: 50px;
     }
@@ -33,20 +53,34 @@ nav {
 main {
     margin-top: 86px;
     /*background: linear-gradient(165deg, #084F8C, #079DD9);*/
-    background-color: #8c8c8c;
+    background-color: #f4ebd0;
 }
 
 /* Footer */
 
-footer {
-    background-color: #8c8c8c;
+.footer {
+    background-color: #f4ebd0;
+    padding: 20px 10px;
 }
 
 .footer-details p {
     margin: 0;
 }
 
+.est-text {
+    font-size: 0.6rem;
+}
+
+.social-link {
+    color: black;
+    font-size: 2rem;
+}
+
 /* Hero */
+
+.carousel-inner {
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 5px 8px 5px;
+}
 
 .hero-caption {
     position: absolute;
@@ -70,13 +104,12 @@ footer {
 
 .carousel-item img {
     height: 55vh;
-    object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+    object-fit: cover;
 }
 
 @media (min-width: 768px) {
-
     .carousel-inner {
-        border-radius: 2.0rem;
+        border-radius: 2rem;
     }
 
     .hero-section {
@@ -105,12 +138,13 @@ footer {
     text-align: center;
     width: 200px;
     height: 100px;
-    background-color: #084F8C; /* Bootstrap primary color */
+    background-color: #084f8c; /* Bootstrap primary color */
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
     border-radius: 2.5rem;
     transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 5px 8px 5px;
 }
 @media (min-width: 576px) {
     .cta-link a {
@@ -144,45 +178,43 @@ footer {
 /* Details Accordion */
 
 .accordion {
-    --bs-accordion-border-color: #084F8C;
+    --bs-accordion-border-color: #084f8c;
     --bs-accordion-border-width: 2px;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 5px 8px 5px;
 }
 
 .accordion-body {
-    background-color: #8c8c8c;
-    color: white;
+    background-color: #f4ebd0;
 }
 
 .accordion-button {
-    background-color: #084F8C;
+    background-color: #084f8c;
     color: white;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #079DD9;
+    background-color: #079dd9;
     color: white;
 }
 
-/* Review Cards */
+/* Reviews Sections */
 
-@media (max-width: 1024px){
-    .card {
-        height: 80vh;
-    }
+.review-section h5,
+.review-section p {
+    font-weight: 700;
 }
 
-@media (min-width: 1025px){
-    .card {
-        height: 70vh;
-    }
+/* Map */
 
-    .review-section {
-        margin-top: 150px;
-    }
+.google-map-container {
+    height: 40vh;
+    max-height: 400px; /* Optional: Limit the maximum height */
 }
-
-.card-body {
-    background-color: #084F8C;
-    color: white;
+.google-map {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 0.5rem; /* Adjust rounding as needed */
+    box-shadow: rgba(0, 0, 0, 0.4) 3px 5px 8px 5px;
 }
-
