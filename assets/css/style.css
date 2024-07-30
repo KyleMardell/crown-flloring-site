@@ -18,6 +18,8 @@ html {
     box-sizing: inherit;
 }
 
+/* Global Styles */
+
 h1,
 h2,
 h3,
@@ -35,10 +37,18 @@ p {
     font-weight: 500;
 }
 
+.light-blue-text {
+    color: #079DD9;
+}
+
+.dark-blue-text {
+    color: #084F8C;
+}
+
 /* Nav */
 
 nav {
-    background-color: #f4ebd0;
+    background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0 3px 6px;
     font-weight: 500;
 }
@@ -54,13 +64,14 @@ nav {
 main {
     margin-top: 86px;
     /*background: linear-gradient(165deg, #084F8C, #079DD9);*/
-    background-color: #f4ebd0;
+    background-color: white;
+    max-width: 100vw;
 }
 
 /* Footer */
 
 .footer {
-    background-color: #f4ebd0;
+    background-color: white;
     padding: 20px 10px;
 }
 
@@ -73,7 +84,7 @@ main {
 }
 
 .social-link {
-    color: black;
+    color: #079DD9;
     font-size: 2rem;
 }
 
@@ -103,9 +114,15 @@ main {
     z-index: 1;
 }
 
-.carousel-item img {
+.carousel-item > img {
     height: 55vh;
+    width: 100vw;
     object-fit: cover;
+}
+
+.hero-container {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
@@ -139,7 +156,8 @@ main {
     text-align: center;
     width: 200px;
     height: 100px;
-    background-color: #084f8c; /* Bootstrap primary color */
+    background: linear-gradient(125deg, #079DD9 5%, #084F8C 100%);
+    border: 1px solid #084F8C;
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
